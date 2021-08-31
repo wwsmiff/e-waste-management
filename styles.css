@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 3rem;
+    height: 3rem;
+    background-color: rgb(50, 50, 50);
+    overflow: hidden;
+}
+
+#navbar-links{
+    display: flex;
+    float: right;
+    margin-left: auto;
+    justify-content: space-around;
+    width: 20%;
+}
+
+#circle-logo{
+    padding: 1rem;
+    margin-left: 0.5rem;
+    background-image: linear-gradient(to bottom, #ff5e62, #ff9966);
+    border-radius: 50%;
+}
+
+#navbar li{
+    padding: 1rem;
+    padding-left: 3%;
+    padding-right: 3%;
+    list-style: none;
+}
+
+#navbar li:hover{
+    background: coral;
+}
+
+#navbar-links li a{
+    text-decoration: none;
+    color:white;
+}
