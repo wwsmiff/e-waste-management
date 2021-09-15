@@ -1,33 +1,35 @@
-/*OTHERS*/
+                        /*IMP*/
 *{
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        font-family: Poppins;
+        font-size: 17px;
 }
 
 html{
-    scroll-behavior: smooth;
-
+        scroll-behavior: smooth;
 }
 
 body{
-    background-image:linear-gradient(to right, #e8cbc0 0%, #636fa4 100%);
+        background-image:linear-gradient(to right, #e8cbc0 0%, #636fa4 100%);
+        font-size: 12px;
 }
 
-/* NAVBAR */
+                        /* NAVBAR */
 header{
         height:70px;
         width: 100%;
         display:flex;
         position: fixed;
         align-items: center;
-        z-index: 5; 
+        z-index: 5;
         transition:0.3s;
         background-color: rgb(50, 50, 50);
 }
 
 .navbar{
-        font-size: 1rem;
+        font-size: 22px;
         align-items: center;
         height: 70px;
         width: 100%;
@@ -46,10 +48,11 @@ header{
 }
 
 .circle-logo{
-        padding: 1rem;
+        padding: 1.3rem;
         margin-left: 20px;
         background-image: linear-gradient(to bottom, #ff5e62, #ff9966);
         border-radius: 50%;
+        cursor: pointer;
 }
 
 .navbar-links li{
@@ -68,12 +71,13 @@ header{
 .navbar-links li a {
         text-decoration: none;
         color:white;
+        display: block;
 }
 
 .hamburger {
 	display: none;
 }
- 
+
 .hamburger div{
 	width: 30px;
 	height: 3px;
@@ -97,11 +101,11 @@ header{
 @keyframes navLinkFade{
 	from{
 		opacity:0;
-		transform: translatex(50px);
+		transform: translateY(100px);
 	}
 	to{
 		opacity: 1;
-		transform:translatex(0px);
+		transform: translateY(0px);
 	}
 }
 
@@ -151,4 +155,95 @@ header{
 }
 .nav-active{
         transform:translateX(0%);
+}
+/*********--- DONT CHANGE THE NAV (ABOVE) ---*********/
+
+
+                        /*SECTIONS*/
+
+#home{
+        color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+        margin: auto;
+	height: 100vh;
+	justify-content: space-evenly;
+        padding-bottom: 30px;
+}
+
+#home .bg{
+        background-image: url(https://thumbs.dreamstime.com/z/planet-earth-left-part-screen-stars-black-chalkboard-mock-up-elements-image-furnished-nasa-78497317.jpg); 
+        background-size: cover;
+	background-position: center;
+        height: 100vh;
+        width:100%;
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+}
+
+.center{
+        text-align: right;
+        color: black;
+        z-index: 1;
+	margin: auto;
+}
+
+.text{
+        color: white;
+        text-shadow: 1px 1px 20px #00a9e2;
+}
+
+#intro{
+        color: white;
+	height: 100vh;
+        padding: 80px 2% 20px 2%;
+	justify-content: space-evenly;
+}
+h1:nth-child(1) {
+	font-weight: bold;
+	color: white;
+}
+
+#intro h1{
+        font-weight: bold;
+        color: black;
+}
+
+p{
+        font-size: 1.4rem;
+	color: black;
+}
+
+#intro ul{
+        color: black;
+        font-size: 1.2rem;
+}
+
+#intro div:nth-child(even){
+	align-items: left;
+	text-align: left;
+}
+#intro div:nth-child(odd){
+	align-items: right;
+	text-align: right;
+}
+
+#intro-image-left{
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#intro-image-right{
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+h3, h5 {
+        color: black;
 }
